@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    top: 0;
+    min-width:550px;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    background-color: lightgray;
+    width: 350px;
+    min-height: 400px;
+    margin: 50px auto;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.row{
+    display: flex;  
+    align-items: center;  
+    justify-content: space-around;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.calci{
+    background-color: rgb(53, 47, 47);
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.output{
+    background-color: white;
+    border-radius:8px ;
+    width: 82%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+.output h1{
+    color: black;
+    text-align: right;
+}
+
+.operator-and-digits{
+    /* border: 1px solid white; */
+    margin: 15px auto;
+    width: 100%;
+    height: 340px;
+    /* display: block; */
+    
+}
+.digits .row{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 60px;
+    margin: 5px 0px;
+
+}
+.digits .row ul{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.digits .row .no-list-style li{
+    position: relative;
+    list-style: none;
+    /* border: 1px solid black; */
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    /* display: flex; */
+}
+.digits .row .no-list-style li{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.digits .row .no-list-style li h1{
+    color: black;
+    font-weight: 400;
+    font-size: large;
+}
+.digits .row .no-list-style .operators {
+    background-color: rgb(40, 165, 155);
+}
+.digits .row .no-list-style .operators h1{
+    color: white;
+}
+
+.digits .row .no-list-style .zero{
+    width: 128px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="calci">Calculator</h1>
+        </div>
+        <div class="row output" >
+            <h1 id="output-eval">0</h1>
+        </div>
+        <div class="row operator-and-digits">
+            <div class="digits">
+                <div class="row">
+                    <ul class="no-list-style">
+                        <li class="btn" data-value="AC"><h1>AC</h1></li>
+                        <li class="btn" id="back" data-value="back"><h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16">
+                                <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                            </svg>
+                        </h1></li>
+                        <li class="btn" data-value="%"><h1>%</h1></li>
+                        <li class="operators btn" data-value="/"><h1>/</h1></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="no-list-style">
+                        <li class="btn num" data-value="7"><h1>7</h1></li>
+                        <li class="btn num" data-value="8"><h1>8</h1></li>
+                        <li class="btn num" data-value="9"><h1>9</h1></li>
+                        <li class="operators btn" data-value="*"><h1>*</h1></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="no-list-style">
+                        <li class="btn num" data-value="4"><h1>4</h1></li>
+                        <li class="btn num" data-value="5"><h1>5</h1></li>
+                        <li class="btn num" data-value="6"><h1 >6</h1></li>
+                        <li class="operators btn" data-value="+"><h1>+</h1></li>
+                    </ul>
+                </div>
+                
+                <div class="row">
+                    <ul class="no-list-style">
+                        <li class="btn num" data-value="1"><h1>1</h1></li>
+                        <li class="btn num" data-value="2"><h1>2</h1></li>
+                        <li class="btn num" data-value="3"><h1>3</h1></li>
+                        <li class="operators btn" data-value="-"><h1>-</h1></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="no-list-style">
+                        <li class="zero btn num" data-value="0"><h1>0</h1></li>
+                        <li class="btn" data-value="."><h1>.</h1></li>
+                        <li class="operators btn" data-value="="><h1>=</h1></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
